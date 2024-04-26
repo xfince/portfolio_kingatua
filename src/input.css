@@ -5,9 +5,11 @@
 @layer utilities{
     .header__1{
         background-color: #ead4ab;
-        color: #000;
-        display: flex;
-        
-
+    }
+    .card{
+        background-color: white;
+    }
+    .foot{
+        background-color: rgb(15, 118, 110);
     }
 }

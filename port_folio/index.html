@@ -6,8 +6,9 @@
     <title>Kimani Vincent Portfolio.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="bg-[#ead4ab]">
+<body class="header__1">
 <!--HAMBURGER MENU-->
 <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -20,19 +21,136 @@
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden" id="menu">
         <div class="text-sm lg:flex-grow">
-            <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">Home</a>
+            <a href="#project" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">Project</a>
             <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">About</a>
             <a href="#contact_form" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">Contact</a>
         </div>
     </div>
 </nav>
 <!--HOLDS THE IMAGE AND A PARAGRAPH OF TEXT BESIDE IT.-->
-<div class="flex">
+<div class="flex flex-col md:flex-row z-10 mb-8">
     <div class="w-1/2 h-screen bg-slate-100">
-        <img src="img/vinny1.jpg" alt="Placeholder Image" class="object-cover w-full h-full">
+        <img class="rounded-lg object-cover w-full h-full" src="img/vinny1.jpg" alt="Placeholder Image">
         <hr>
     </div>
+    <!--SECTION CONTAINING TEXT BESIDE MY PICTURE.-->
+    <div class="w-full md:w-1/2 p-8 mb-10">
+        <h1 class="text-3xl font-bold">Crafting Digital solutions with Excellence</h1>
+        <p class="text-gray-700 p-12 text-7xl">
+            Hello am Kimani Vincent <br>
+            A web developer.⭐
+        </p>
+    </div>
 </div>
+
+<div id="project" class="flex flex-wrap flex-center mt-[] justify-center">
+    <!--A CARD CONTAINING THE HTML PROJECT.-->
+    <div class="card max-w-sm shadow-lg  rounded-lg overflow-hidden m-4">
+        <img class="w-full h-40 object-cover object-center rounded-t-lg" src="img/coding_picture.jpg" alt="a coding picture">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">My Little Taco Shop *HTML</div>
+            <p class="text-gray-700 text-base">This is a basic website that features a taco shop.
+                It has an about, menu table, contact form with very minimal CSS.<br>
+                <a href="KINGATUA PASTE THE LINK HERE"><i>My Little Taco Shop *HTML</i></a> <br>
+                (This link will redirect you out of this page.)
+            </p>
+        </div>
+    </div>
+
+    <!--A CARD CONTAINING THE CSS PROJECT.-->
+    <div class="card max-w-sm shadow-lg rounded-lg overflow-hidden m-4">
+        <img class="w-full h-40 object-cover object-center rounded-t-lg" src="img/coding_picture2.jpg" alt="a coding picture">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">My Little Taco Shop *CSS</div>
+            <p class="text-gray-700 text-base">An improved version of the taco shop now with CSS. <br>
+                <a href="KINGATUA PASTE THE LINK HERE"><strong>My Little Taco Shop *CSS</strong></a> <br>
+                (This link will redirect you out of this page.)
+            </p>
+        </div>
+    </div>
+    <!--A CARD CONTAINING THE TAILWINDCSS PROJECT.-->
+    <div class="card max-w-sm shadow-lg rounded-lg overflow-hidden m-4">
+        <img class="w-full h-40 object-cover object-center rounded-t-lg" src="img/coding_picture3.jpg" alt="a coding picture">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Kimani Acme Rockets *Tailwind</div>
+            <p class="text-gray-700 text-base">A styled project for the sell of rockets. It's mainly Tailwindcss and HTML 
+                based for its development. <br>
+                <a href="KINGATUA PASTE THE LINK HERE"><strong>Kimani Acme Rockets</strong></a><br>
+                (This link will redirect you out of this page.)
+            </p>
+        </div>
+    </div>
+</div>
+<!--AN ABOUT SECTION CONTAINING MY BACKGROUND AND GOALS.-->
+<section id="about">
+    <div class="max-w-md mx-auto text-center mt-8">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg text-gray-700">I am Kimani Vincent, originally from Kagumo High School.
+            I live in Nyahururu Town, Laikipia county. 
+            I am interested in enhancing my skills to grow, and one day help others with the same dream as mine of a great future.  
+            I greatly enjoy learning at DirectEd as it has provided me with invaluable experience and knowledge. 
+            Throughout my academic journey, I have been passionate about exploring new ideas and expanding my horizons. 
+            DirectEd has been instrumental in fostering my curiosity and nurturing my intellectual growth.  
+            I believe in the power of education to transform lives and am committed to making a positive impact in my community and beyond.
+        </p>
+    </div>
+</section>
+<hr class="mx-auto w-1/2 bg-black"/>
+<!--A CONTACT FOR TO REACH OUT.-->
+<section id="contact_form" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
+    <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+      Interested And Wanna Reach Out?
+    </h2>
+    <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
+        class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="😊😊Type To Reach Out To Me😊😊" required
+        class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
+      <button
+        class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
+        Submit
+      </button>
+    </form>
+  </section>
+  <!--THE FOOTER TO THE PAGE CONTAINING LINKS TO SOCIAL MEDIA HANDLES.-->
+  <footer id="footer" class="foot text-xl text-white">
+    <div class="flex flex-col sm:gap-2">
+        <p class="text-left">
+            <a href="https://www.instagram.com/sf_vince_" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram fa-1x">Visit My Instagram Account</i>
+            </a>            
+        </p>
+        <p class="text-left ">
+            <a href="tel:+254112871431">
+                <i class="fas fa-phone fa-1x">Call Me</i>
+            </a>                      
+        </p>
+        <p class="text-left">
+            <a href="mailto:kimanivincent2006@gmail.com">
+                <i class="fas fa-envelope fa-1x">Email Me</i>
+            </a>
+        </p>
+        <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+        <p class="text-right">All Rights Reserved</p>
+        <p class="text-right"><em>Kimani Vincent</em></p>
+    </div>
+  </footer>
+  
+
+<script>
+    // ADDED SOME JAVASCRIPT FOR THE FUNCTIONING OF THE HAMBURGER MENU.
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+</script>
+
 
 </body>
 </html>
