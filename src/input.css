@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .header__1{
+        background-color: #ead4ab;
+        color: #000;
+        display: flex;
+        
+
+    }
+}
